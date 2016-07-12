@@ -6,6 +6,6 @@ namespace iTextSharp.text.pdf.languages
 {
     public interface GlyphRepositioner
     {
-        void repositionGlyphs(List<Glyph> glyphList);
+        void RepositionGlyphs(List<Glyph> glyphList);
     }
 }
