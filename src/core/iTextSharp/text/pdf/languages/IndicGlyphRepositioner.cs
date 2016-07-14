@@ -4,9 +4,9 @@ using System.Text;
 
 namespace iTextSharp.text.pdf.languages
 {
-    abstract class IndicGlyphRepositioner : GlyphRepositioner
+    public abstract class IndicGlyphRepositioner : GlyphRepositioner
     {
-        public void RepositionGlyphs(List<Glyph> glyphList)
+        public virtual void RepositionGlyphs(List<Glyph> glyphList)
         {
 
             for (int i = 0; i < glyphList.Count; i++)
@@ -26,7 +26,7 @@ namespace iTextSharp.text.pdf.languages
 
         }
 
-        internal abstract List<string> CharactersToBeShiftedLeftByOnePosition();
+        public abstract List<string> CharactersToBeShiftedLeftByOnePosition();
 
         private Glyph GetNextGlyph(List<Glyph> glyphs, int currentIndex)
         {
