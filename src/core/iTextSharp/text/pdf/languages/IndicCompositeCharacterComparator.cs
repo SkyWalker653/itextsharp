@@ -18,7 +18,7 @@ namespace iTextSharp.text.pdf.languages
             }
             else
             {
-                return Compare(o1, o2);
+                return o1.CompareTo(o2);
             }
         }
     }
